@@ -1,0 +1,12 @@
+{
+  "MailSettings": {
+    "ToAddress": "rahmounimad@gmail.com"
+  },
+  "ConnectionStrings": {
+    "WorldContextConnextion": "Server=(localdb)\\MSSQLLocalDB;Database=TheWorldDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  },
+
+  "Keys": {
+    "BingMapKey": "DONTEVERPUTKEYSINSOURCECONTROL" 
+  } 
+}
