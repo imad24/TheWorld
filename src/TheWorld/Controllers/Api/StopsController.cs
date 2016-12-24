@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
@@ -77,8 +75,6 @@ namespace TheWorld.Controllers.Api
                             return Created($"/api/trips/{tripName}/stop/{newStop.Name}", Mapper.Map<StopViewModel>(newStop));
                         }
                     }
-
-
                 }
             }
             catch (Exception ex)
@@ -87,7 +83,7 @@ namespace TheWorld.Controllers.Api
                _logger.LogError($"Failed to save new Stop: {ex}");
             }
 
-            return BadRequest("Failed inserting stop");
+            return BadRequest($"Failed inserting stop");
 
         }
     }
